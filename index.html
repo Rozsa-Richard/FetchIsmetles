@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nevetés</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Viccek</h1>
+    <h1>Jokes</h1>
     <div Id="Menu"> 
-        <button onclick="getRandomJoke()">Joke by Id</button>
+        <button onclick="getJokeById()">Joke by Id</button>
         <button onclick="getRandomJoke()">Random Joke</button>
         <button onclick="getRandomJoke()">Jokes by type</button>
+        <select id="select" size=”3”>
+            <option value="general">General</option>
+            <option value="programing">Programing</option>
+            <option value="dad">Dad</option>
+        </select>
     </div>
     <div id="Joke">
+        <h4 id="JokeType"></h4>
+        <p id="Setup">
 
+        </p>
+        <p id="Punchline">
+
+        </p>
+        <h5 id="JokeId"></h5>
+        <button id="JokeNext" style="visibility: hidden;">Next Joke</button>
     </div>
     <script src="script.js"></script>
 </body>
